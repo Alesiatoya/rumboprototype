@@ -1,0 +1,231 @@
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Oxygen', sans-serif;
+    }
+    
+    header {
+        width: 100%;
+        /*para llamar una imagen de fondo, utilizamos la propiedad
+    url y la ruta seria ../ para salir de la carpeta y completamos el código */
+        background: url(../img/bg-header.png);
+        /* Cover ajusta la imagen al ancho y alto del elemento */
+        background-size: cover;
+        height: 100vh;
+        padding-top: 40px;
+    }
+    
+    header nav {
+        max-width: 1200px;
+        width: 100%;
+        /* Margin centra el contenedor */
+        margin: 0 auto;
+        /* Usamos display: flex; para ubicar los contenidos uno junto a otro */
+        display: flex;
+        /* eje x justify content */
+        justify-content: space-between;
+        /* eje y align items */
+        align-items: center;
+    }
+    
+    header nav ul {
+        display: flex;
+    }
+    
+    header nav ul li {
+        list-style: none;
+        margin: 0 30px;
+        transform: rotateX(15%);
+    }
+    
+    header nav ul li a {
+        font-size: 22px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        padding: 12px 30px;
+    }
+    
+    header nav ul li a:hover {
+        border-bottom: 2px solid white;
+    }
+    
+    header #hero {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 180px;
+    }
+    
+    header #hero h1 {
+        color: #e8f00c;
+        font-size: 60px;
+        margin: 0;
+    }
+    
+    header #hero h2 {
+        color: #ffffff;
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    
+    header #hero a {
+        background: #e8f00c;
+        padding: 12px 40px;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 12px;
+        color: gray;
+        transition: 0.5s;
+    }
+    
+    header #hero a:hover {
+        padding: 12px 60px;
+        border-radius: 0;
+        background: white;
+    }
+    /* Sección planes */
+    
+    #planes {
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+        background: #ffffff;
+    }
+    
+    #planes .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #planes h2 {
+        font-size: 40px;
+    }
+    
+    #planes p {
+        font-size: 20px;
+    }
+    
+    #planes .fila {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+    
+    #planes .fila .card {
+        position: relative;
+    }
+    
+    #planes .fila .card h3 {
+        position: absolute;
+        top: 95px;
+        left: 0;
+        right: 0;
+        color: #e8f00c;
+        font-size: 25px;
+    }
+    /* Sección destinos */
+    
+    #destinos {
+        background: url(../img/bg-destinos.png);
+        background-size: cover;
+        height: 100vh;
+        padding-top: 40px;
+        text-align: center;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    
+    #destinos h2 {
+        font-size: 40px;
+        color: #e8f00c;
+    }
+    
+    #destinos .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #destinos .fila {
+        display: flex;
+        padding-top: 60px;
+        justify-content: space-around;
+    }
+    
+    #destinos .fila .card {
+        position: relative;
+        text-align: center;
+    }
+    
+    #destinos .fila .card h3 {
+        color: #ffffff;
+        font-size: 25px;
+    }
+    /* Sección contacto */
+    
+    #contacto {
+        background: #e8f00c;
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    #contacto .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #contacto .container h2 {
+        font-size: 40px;
+        font-stretch: ultra-expanded;
+    }
+    
+    #contacto p {
+        font-size: 25px;
+    }
+    
+    #contacto input {
+        padding: 4px 15px;
+        font-size: 20px;
+        width: 300px;
+        margin: 20px;
+        border-radius: 4px;
+    }
+    
+    #contacto select {
+        padding: 6px 12px;
+        font-size: 20px;
+        width: 330px;
+        margin: 18px;
+        border-radius: 4px;
+    }
+    
+    #contacto button {
+        font-size: 20px;
+        padding: 10px 30px;
+        margin-top: 35px;
+        color: #ffffff;
+        background: rgb(197, 178, 4);
+    }
+    /* Footer */
+    
+    footer {
+        background: #000000;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
